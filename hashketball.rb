@@ -70,7 +70,7 @@ def team_names
   teams
 end 
 
-
+=begin
 def player_stats(player_name)
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
@@ -87,6 +87,10 @@ def player_stats(player_name)
     end
   end
 end
+=end 
+
+def player_stats 
+  
 binding.pry
 def num_points_scored(player)
   stats = player_stats(player)
