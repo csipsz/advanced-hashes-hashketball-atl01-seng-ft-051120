@@ -66,7 +66,7 @@ def team_names
   game_hash.each do |key, value| 
     if value == :team_name
       binding.pry
-      teams.push(game_hash[key][value])
+      teams.push(game_hash[key][value][0])
     end 
   end 
 end 
