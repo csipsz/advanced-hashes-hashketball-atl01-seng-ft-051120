@@ -70,7 +70,7 @@ def team_names
   teams
 end 
 
-=begin
+
 def player_stats(player_name)
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
@@ -87,18 +87,6 @@ def player_stats(player_name)
     end
   end
 end
-=end 
-
-def player_stats(player_name)
-  game_hash.each do |key, value| 
-    if value == :players && value == player_name
-      binding.pry
-    value.each do |hash| 
-     return hash 
-    end 
-    end 
-  end 
-end 
 
 
 def num_points_scored(player)
