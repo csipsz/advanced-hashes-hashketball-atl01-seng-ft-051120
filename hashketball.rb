@@ -28,10 +28,10 @@ def game_hash
 end
 
 
-def team_colors(teamName)
-  game_hash.each do |homeAway, upkeyz|
-    upkeyz.each do |info, data|
-      if teamName == data 
+def team_colors(name)
+  game_hash.each do |homeAway, upkeys|
+    upkeys.each do |key, value|
+      if name == value 
         return game_hash[homeAway][:colors]
       end
     end
