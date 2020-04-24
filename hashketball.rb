@@ -46,6 +46,7 @@ def team_colors(name)
   end 
 end 
 =end 
+
 =begin
 def team_names
   teams = []
@@ -58,6 +59,7 @@ def team_names
   end
   teams
 end
+=end 
 
 def team_names 
   teams = []
