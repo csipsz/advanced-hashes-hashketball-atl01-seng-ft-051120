@@ -89,10 +89,18 @@ def player_stats(player_name)
 end
 =end 
 
-def player_stats 
+def player_stats(player_name)
   game_hash.each do |key, value| 
-    game_hash[key][:players][0]
+    game_hash[key][:players].each do |hash| 
+      binding.pry
+      if player_name == hash 
+        return hash 
+      end 
+    end 
+  end 
 end 
+
+
 def num_points_scored(player)
   stats = player_stats(player)
   stats.each do |key, value|
