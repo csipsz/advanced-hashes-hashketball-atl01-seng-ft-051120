@@ -27,7 +27,6 @@ def game_hash
  }
 end
 
-=begin
 def team_colors(name)
   game_hash.each do |homeAway, upkeys|
     upkeys.each do |key, value|
@@ -37,8 +36,8 @@ def team_colors(name)
     end
   end
 end
-=end 
 
+=begin
 def team_colors(name)
   if game_hash[:home][:team_name] == name 
     game_hash[:home][:colors]
@@ -46,6 +45,7 @@ def team_colors(name)
     game_hash[:away][:colors]
   end 
 end 
+=end 
 
 def team_names
   teams = []
