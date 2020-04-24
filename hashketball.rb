@@ -135,8 +135,8 @@ end
 def big_shoe_rebounds 
   bigfoot = 0 
   rebounds = 0 
-  game_hash.each do |homeAway, upkeyz|
-    upkeyz[:players].each do |hash| 
+  game_hash.each do |homeAway, upkeys|
+    upkeys[:players].each do |hash| 
       if hash[:shoe] >= bigfoot
         bigfoot = hash[:shoe]
         rebounds = hash[:rebounds]
