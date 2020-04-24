@@ -92,9 +92,11 @@ end
 def player_stats(player_name)
   game_hash.each do |key, value| 
     game_hash[key][:players].each do |hash| 
+      hash.each do |key, value| 
       #binding.pry
-      if player_name == hash 
-        return hash 
+      if player_name == key 
+        return value 
+      end 
       end 
     end 
   end 
