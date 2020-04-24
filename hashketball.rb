@@ -49,8 +49,8 @@ end
 
 def team_names
   teams = []
-  game_hash.each do |homeAway, upkeyz|
-    upkeyz.each do |key, value|
+  game_hash.each do |homeAway, upkeys|
+    upkeys.each do |key, value|
       if key == :team_name
       teams.push(value)
       end
