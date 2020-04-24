@@ -148,9 +148,9 @@ end
 
 def most_points_scored 
   highScore = 0 
-  coolDude = "we don't know him yet"
-  game_hash.each do |homeAway, upkeyz|
-    upkeyz[:players].each do |innerHash|
+  coolDude = nil 
+  game_hash.each do |homeAway, upkeys|
+    upkeys[:players].each do |innerHash|
       if innerHash[:points] >= highScore
         highScore = innerHash[:points]
         coolDude = innerHash[:player_name]
