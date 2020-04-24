@@ -90,8 +90,8 @@ end
 =end 
 
 def player_stats 
-  
-binding.pry
+  game_hash.each do |
+end 
 def num_points_scored(player)
   stats = player_stats(player)
   stats.each do |key, value|
