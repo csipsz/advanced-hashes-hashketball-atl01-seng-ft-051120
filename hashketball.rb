@@ -65,6 +65,7 @@ def team_names
   teams = []
   game_hash.each do |key, value| 
     if value == :team_name
+      bnding.pry
       teams.push(game_hash[key][value])
     end 
   end 
