@@ -46,7 +46,7 @@ def team_colors(name)
   end 
 end 
 =end 
-
+=begin
 def team_names
   teams = []
   game_hash.each do |homeAway, upkeys|
