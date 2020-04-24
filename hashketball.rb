@@ -94,7 +94,7 @@ def player_stats(player_name)
     if value == :players && value == player_name
       #binding.pry
     value.each do |hash| 
-      hash 
+     return hash 
     end 
     end 
   end 
