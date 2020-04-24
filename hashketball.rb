@@ -70,6 +70,7 @@ def team_names
   teams
 end 
 
+binding.pry
 def player_stats(player_name)
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
