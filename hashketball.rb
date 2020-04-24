@@ -47,7 +47,6 @@ def team_colors(name)
 end 
 =end 
 
-=begin
 def team_names
   teams = []
   game_hash.each do |homeAway, upkeys|
@@ -59,10 +58,12 @@ def team_names
   end
   teams
 end
-=end 
 
 def team_names 
-  teams = [game_hash[:home][:team_name], game_hash[:away][:team_name]]
+  teams = []
+  game_hash.each do |key, value| 
+    if value == :team_name
+      teams.push(game_hash)
 end 
 
 def player_stats(player_name)
