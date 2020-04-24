@@ -64,8 +64,7 @@ end
 def team_names 
   teams = []
   game_hash.each do |key, value| 
-    #binding.pry
-      teams.push(game_hash[key][:team_name])
+    teams.push(game_hash[key][:team_name])
   end 
   teams
 end 
