@@ -63,7 +63,9 @@ def team_names
   teams = []
   game_hash.each do |key, value| 
     if value == :team_name
-      teams.push(game_hash)
+      teams.push(game_hash[key][value])
+    end 
+  end 
 end 
 
 def player_stats(player_name)
