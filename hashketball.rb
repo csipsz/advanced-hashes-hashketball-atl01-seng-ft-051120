@@ -90,7 +90,8 @@ end
 =end 
 
 def player_stats 
-  game_hash.each do |
+  game_hash.each do |key, value| 
+    game_hash[key][:players][0]
 end 
 def num_points_scored(player)
   stats = player_stats(player)
