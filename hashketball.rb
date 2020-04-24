@@ -198,8 +198,8 @@ def long_name_steals_a_ton?
   highsteals = 0 
   highstealer = nil
   player = player_with_longest_name
-  game_hash.each do |homeAway, upkeyz|
-    upkeyz[:players].each do |hash|
+  game_hash.each do |homeAway, upkeys|
+    upkeys[:players].each do |hash|
       hash.each do |key, value|
         if key == :steals && value >= highsteals
           highsteals = value
