@@ -44,6 +44,8 @@ def team_colors(name)
     game_hash[:home][:colors]
   else 
     game_hash[:away][:colors]
+  end 
+end 
 
 def team_names
   teams = []
